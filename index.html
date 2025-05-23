@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>supabase</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="container">
+        <div class="logo">
+            <img src="assets/media/logo.png" alt="">
+        </div>
+        <ul class="menu">
+            <li class="menu1" data-dropdown="Product">Product <img src="assets/media/Vector-2.svg" alt="">
+                <ul class="menu2">
+                    <li>Database</li>
+                    <li>Authentication</li>
+                    <li>Storage</li>
+                </ul>
+            </li>
+            <li class="menu1" data-dropdown="Developers">Developers <img src="assets/media/Vector-2.svg" alt="">
+                <ul class="menu2">
+                    <li>Documentation</li>
+                    <li>API Reference</li>
+                    <li>Guides</li>
+                </ul>
+            </li>
+            <li class="menu1">Betas</li>
+            <li class="menu1">Pricing</li>
+        </ul>   
+        <div class="b-header">
+            <button onclick="openModal()">Start your project</button>
+            <p>Sign in</p>
+        </div>
+    </header>
+
+    <div class="modal" id="reg-modal">
+        <div class="reg">
+            <span class="close">&times;</span>
+            <h4>Registration</h4>
+            <form>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Register</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="banner container">
+        <div class="all">
+            <div class="text-banner">
+                <div class="logo-banner">
+                    <img src="assets/media/storage.png" alt="">
+                    <p class="p10">Storage</p>
+                </div>
+                <p class="p11">Store and serve <br>any type of digital content<br></p>
+                <p class="p12">An open source Object store service with unlimited scalability, for any file type.</p>
+                <p class="p13">With custom policies and permissions that are familiar and easy to implement.</p>
+                <button>Start a project</button>
+            </div>
+            <div class="img-banner">
+                <div class="slider">
+                    <div class="slider-images">
+                        <img class="slider-img active" src="assets/media/banner.png" alt="">
+                        <img class="slider-img" src="assets/media/116a3cbeb2276cea3d4d5a3133e668bb.jpg" alt="">
+                        <img class="slider-img" src="assets/media/940b3dd8c8531fc4e83b65b9c26adf54.jpg" alt="">
+                        <img class="slider-img" src="assets/media/a9e1b7e6ed2c3a4baebcc50271685749.jpg" alt="">
+                        <img class="slider-img" src="assets/media/f4dd0d9e1d3301e2075c96cc6f93b52b.jpg" alt="">
+                        <img class="slider-img" src="assets/media/f6644dc3e17cb8e40f37f0b01a8cfd7a.jpg" alt="">
+                    </div>
+                    <button class="slider-btn prev">&#10094;</button>
+                    <button class="slider-btn next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info container">
+        <div class="cards">
+            <div class="card1">
+                <div class="img-card">
+                    <img src="assets/media/1.png" alt="">
+                    <img class="img1" src="assets/media/2.png" alt="">
+                    <img src="assets/media/3.png" alt="">
+                    <img class="img1" src="assets/media/2.png" alt="">
+                    <img src="assets/media/4.png" alt="">
+                </div>
+                <p class="p14">Interoperable</p>
+                <p class="p15">Integrates well with the rest of Supabase ecosystem, including Auth and Postgres.</p>
+            </div>
+
+            <div class="card">
+                <img src="assets/media/light.png" alt="">
+                <p class="p14">Lightning fast</p>
+                <p class="p15">Thin API server layer that leverages Postgres' permissions and performance.</p>
+            </div>
+
+            <div class="card">
+                <img src="assets/media/galka.png" alt="">
+                <p class="p14">Dependable</p>
+                <p class="p15">Enterprise-level scalability and durability.</p>
+            </div>
+        </div>
+    </div> 
+    
+    
+    <div class="catalog container">
+        <div class="text">
+            <p class="p1">Sleek dashboard for managing your media</p>
+            <p class="p2">A complete Object Explorer so that any of your team can use.</p>
+            <p class="p3">Drag and drop uploading, moving objects, and multiple object selection. As easy as working on your desktop.</p>
+        </div>
+
+        <div class="big">
+            <div class="click">
+                <button class="tab-button active" data-tab="File-preview">File previews</button>
+                <button class="tab-button" data-tab="Column-view">Column view</button>
+                <button class="tab-button" data-tab="List-view">List view</button>
+                <button class="tab-button" data-tab="Multi-select-actions">Multi select actions</button>
+                <button class="tab-button" data-tab="Path-navigator">Path navigator</button>
+            </div>
+
+            <div class="tabs-content">
+                <div class="tab-content active" id="File-preview">
+                    <div class="b-img">
+                        <img src="assets/media/Frame-2.png" alt="">
+                        <div class="b-text">
+                            <p class="p4">File previews</p>
+                            <p class="p5">Preview any media type, including video and audio.</p>
+                            <p class="p6">Check out our example app</p>
+                            <div class="b-block">
+                                <p class="p7">Profile management example</p>
+                                <p class="p8">Update a user account with public profile information, including uploading a profile image.</p>
+                                <div class="create">
+                                    <p class="p9">Created by:</p>
+                                    <img src="assets/media/logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="cat">
+                                <p>nextjs-ts-user-management</p>
+                                <img src="assets/media/mini.png" alt="">
+                            </div>
+                            <div class="deploy">
+                                <img src="assets/media/3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="Column-view">
+                    <div class="b-img">
+                        <img src="assets/media/Frame-2.png" alt="">
+                        <div class="b-text">
+                            <p class="p4">Column view</p>
+                            <p class="p5">Browse files in a multi-column layout for easy navigation.</p>
+                            <p class="p6">Check out our example app</p>
+                            <div class="b-block">
+                                <p class="p7">Profile management example</p>
+                                <p class="p8">Update a user account with public profile information, including uploading a profile image.</p>
+                                <div class="create">
+                                    <p class="p9">Created by:</p>
+                                    <img src="assets/media/logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="cat">
+                                <p>nextjs-ts-user-management</p>
+                                <img src="assets/media/mini.png" alt="">
+                            </div>
+                            <div class="deploy">
+                                <img src="assets/media/3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="List-view">
+                    <div class="b-img">
+                        <img src="assets/media/Frame-2.png" alt="">
+                        <div class="b-text">
+                            <p class="p4">List view</p>
+                            <p class="p5">Display files as a detailed list with key information.</p>
+                            <p class="p6">Check out our example app</p>
+                            <div class="b-block">
+                                <p class="p7">Profile management example</p>
+                                <p class="p8">Update a user account with public profile information, including uploading a profile image.</p>
+                                <div class="create">
+                                    <p class="p9">Created by:</p>
+                                    <img src="assets/media/logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="cat">
+                                <p>nextjs-ts-user-management</p>
+                                <img src="assets/media/mini.png" alt="">
+                            </div>
+                            <div class="deploy">
+                                <img src="assets/media/3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="Multi-select-actions">
+                    <div class="b-img">
+                        <img src="assets/media/Frame-2.png" alt="">
+                        <div class="b-text">
+                            <p class="p4">Multi select actions</p>
+                            <p class="p5">Perform batch operations on multiple selected files.</p>
+                            <p class="p6">Check out our example app</p>
+                            <div class="b-block">
+                                <p class="p7">Profile management example</p>
+                                <p class="p8">Update a user account with public profile information, including uploading a profile image.</p>
+                                <div class="create">
+                                    <p class="p9">Created by:</p>
+                                    <img src="assets/media/logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="cat">
+                                <p>nextjs-ts-user-management</p>
+                                <img src="assets/media/mini.png" alt="">
+                            </div>
+                            <div class="deploy">
+                                <img src="assets/media/3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="Path-navigator">
+                    <div class="b-img">
+                        <img src="assets/media/Frame-2.png" alt="">
+                        <div class="b-text">
+                            <p class="p4">Path navigator</p>
+                            <p class="p5">Quickly navigate and track your current file location.</p>
+                            <p class="p6">Check out our example app</p>
+                            <div class="b-block">
+                                <p class="p7">Profile management example</p>
+                                <p class="p8">Update a user account with public profile information, including uploading a profile image.</p>
+                                <div class="create">
+                                    <p class="p9">Created by:</p>
+                                    <img src="assets/media/logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="cat">
+                                <p>nextjs-ts-user-management</p>
+                                <img src="assets/media/mini.png" alt="">
+                            </div>
+                            <div class="deploy">
+                                <img src="assets/media/3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="asks container">
+        <div class="zag">
+            <p>Integrates natively with Supabase Auth</p>
+        </div>
+
+        <div class="ask">
+            <div class="ask1">
+                <p>Using Postgres Row Level Security to create Object access rules.</p>
+                <img src="assets/media/Vector-2.svg" alt="">
+            </div>
+            <div class="ans">
+                <p>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.Storage  is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.</p>
+                <div class="b">
+                    <img src="assets/media/strelka.png" alt="">
+                    <p>Expore documentation</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ask">
+            <div class="ask1">
+                <p>Using Postgres Row Level Security to create Object access rules.</p>
+                <img src="assets/media/Vector-2.svg" alt="">
+            </div>
+            <div class="ans">
+                <p>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.Storage  is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.</p>
+                <div class="b">
+                    <img src="assets/media/strelka.png" alt="">
+                    <p>Expore documentation</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ask">
+            <div class="ask1">
+                <p>Using Postgres Row Level Security to create Object access rules.</p>
+                <img src="assets/media/Vector-2.svg" alt="">
+            </div>
+            <div class="ans">
+                <p>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.Storage  is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.</p>
+                <div class="b">
+                    <img src="assets/media/strelka.png" alt="">
+                    <p>Expore documentation</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ask">
+            <div class="ask1">
+                <p>Using Postgres Row Level Security to create Object access rules.</p>
+                <img src="assets/media/Vector-2.svg" alt="">
+            </div>
+            <div class="ans">
+                <p>Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.Storage  is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.</p>
+                <div class="b">
+                    <img src="assets/media/strelka.png" alt="">
+                    <p>Expore documentation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer container">
+            <div class="f-logo">
+                <img src="assets/media/logo.png" alt="">
+                <div class="s">
+                    <img src="assets/media/Frame (2).png" alt="">
+                    <img src="assets/media/Frame (3).png" alt="">
+                </div>
+            </div>
+
+            <div class="all-f">
+                <div class="t-footer">
+                    <p class="z">Product</p>
+                    <p class="p16">Database</p>
+                    <p class="p16">Authentication</p>
+                    <p class="p16">Storage</p>
+                    <p class="p16">Functions</p>
+                    <p class="p16">Coming soon</p>
+                    <p class="p16">Pricing</p>
+                </div>
+    
+                <div class="t-footer">
+                    <p class="z">Resources</p>
+                    <p class="p16">Support</p>
+                    <p class="p16">Case Studies</p>
+                    <p class="p16">System Status</p>
+                    <p class="p16">Terms of service</p>
+                </div>
+    
+                <div class="t-footer">
+                    <p class="z">Developers</p>
+                    <p class="p16">Documentation</p>
+                    <p class="p16">API Reference</p>
+                    <p class="p16">Guides</p>
+                </div>
+    
+                <div class="t-footer">
+                    <p class="z">Company</p>
+                    <p class="p16">Blog</p>
+                    <p class="p16">Open Source</p>
+                    <p class="p16">Humans.txt</p>
+                    <p class="p16">Lawyers.txt</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   <script src="assets/js/main.js"></script> 
+</body>
+</html>
